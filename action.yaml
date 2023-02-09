@@ -1,0 +1,34 @@
+#action.yaml
+name: Run email code
+description: for sending failure email
+author: KKumari
+branding:
+  icon: 'activity'
+  color: 'yellow'
+inputs:
+  username:
+    description: 'email of user'
+    required: true
+  password:
+    description: 'password'
+    required: true
+  gitjob:
+    description: 'name of job'
+    required: true
+  gitrepos:
+    description: 'name of repository'
+    required: true
+  gitwork:
+    description: 'name of workflow'
+    required: true
+steps:
+  - uses: actions/checkout@v2
+  - uses: actions/setup-python@v2
+    with:
+      python-version: 3.x
+        username1: ${{ inputs.username }}
+        password1: ${{inputs.password}}
+        gitjob1: ${{inputs.gitjob}}
+        gitrepos1: ${{inputs.gitrepos}}
+        gitwork1: ${{inputs.gitwork}}
+runs : python unsuccessful.py gitjob1 gitrepos1 gitwork1
