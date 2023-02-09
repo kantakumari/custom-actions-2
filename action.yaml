@@ -1,5 +1,5 @@
 #action.yaml
-name: Run email code
+name: Send email on failure
 description: for sending failure email
 author: KKumari
 branding:
