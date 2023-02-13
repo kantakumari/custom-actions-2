@@ -8,21 +8,14 @@ branding:
 inputs:
   username:
     description: 'email of user'
-    required: true
   password:
     description: 'password'
-    required: true
   gitjob:
     description: 'name of job'
-    required: true
   gitrepos:
     description: 'name of repository'
-    required: true
   gitwork:
     description: 'name of workflow'
-    required: true
-steps:
-    with:
-        username1: ${{ inputs.username }}
-        password1: ${{inputs.password}}
-    runs : python unsuccessful.py "${{ inputs.gitjob }}" "${{ inputs.gitrepos }}" "${{ inputs.gitwork }}"
+runs:
+   using: python
+   main: unsuccessful.py "${{ inputs.gitjob }}" "${{ inputs.gitrepos }}" "${{ inputs.gitwork }}"
