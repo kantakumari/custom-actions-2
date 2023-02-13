@@ -16,6 +16,4 @@ inputs:
     description: 'name of repository'
   gitwork:
     description: 'name of workflow'
-runs:
-   using: python
-   main: unsuccessful.py "${{ inputs.gitjob }}" "${{ inputs.gitrepos }}" "${{ inputs.gitwork }}"
+runs: unsuccessful.py "${{ inputs.gitjob }}" "${{ inputs.gitrepos }}" "${{ inputs.gitwork }}"
