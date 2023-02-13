@@ -22,13 +22,10 @@ inputs:
     description: 'name of workflow'
     required: true
 steps:
-  - uses: actions/checkout@v2
-  - uses: actions/setup-python@v2
     with:
-      python-version: 3.x
         username1: ${{ inputs.username }}
         password1: ${{inputs.password}}
         gitjob1: ${{inputs.gitjob}}
         gitrepos1: ${{inputs.gitrepos}}
         gitwork1: ${{inputs.gitwork}}
-runs : python unsuccessful.py gitjob1 gitrepos1 gitwork1
+    runs : python unsuccessful.py gitjob1 gitrepos1 gitwork1
