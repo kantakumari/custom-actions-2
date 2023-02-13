@@ -6,5 +6,5 @@ branding:
   icon: 'activity'
   color: 'yellow'
 runs: 
-  uses: 'actions/setup-python@v2'
+  using: 'actions/setup-python@v2'
   run: python unsuccessful.py
