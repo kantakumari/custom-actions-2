@@ -5,4 +5,5 @@ author: KKumari
 branding:
   icon: 'activity'
   color: 'yellow'
-runs: sh 'python3 unsuccessful.py' 
+runs: 
+  command: bash -c "python unsuccessful.py"
