@@ -6,4 +6,7 @@ branding:
   icon: 'activity'
   color: 'yellow'
 runs: 
-  command: bash -c "python unsuccessful.py"
+  using: 'actions/setup-python@v2'
+    with:
+      python-version: 3.x
+    run: python unsuccessful.py
