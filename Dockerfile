@@ -3,6 +3,6 @@ FROM python:3
 COPY requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 # script.py is the file that will contain the codes that we want to run for this action.
-COPY script.py /script.py
+COPY unsuccessful.py /unsuccessful.py
 # we will just run our script.py as our docker entrypoint by python script.py
-CMD ["python", "/script.py"]
+CMD ["python", "/unsuccessful.py"]
