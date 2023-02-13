@@ -5,4 +5,15 @@ author: KKumari
 branding:
   icon: 'activity'
   color: 'yellow'
-runs: unsuccessful.py 
+inputs:
+  username:
+    description: 'email of user'
+  password:
+    description: 'password'
+  gitjob:
+    description: 'name of job'
+  gitrepos:
+    description: 'name of repository'
+  gitwork:
+    description: 'name of workflow'
+runs: python unsuccessful.py
