@@ -22,10 +22,7 @@ inputs:
     description: 'name of workflow'
     required: true
 steps:
-  - uses: actions/checkout@v2
-  - uses: actions/setup-python@v2
     with:
-      python-version: 3.x
         username1: ${{ inputs.username }}
         password1: ${{inputs.password}}
         gitjob1: ${{inputs.gitjob}}
