@@ -5,4 +5,4 @@ author: KKumari
 branding:
   icon: 'activity'
   color: 'yellow'
-runs: python unsuccessful.py
+run: python unsuccessful.py
