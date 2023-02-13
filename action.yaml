@@ -5,4 +5,6 @@ author: KKumari
 branding:
   icon: 'activity'
   color: 'yellow'
-runs: python unsuccessful.py
+runs:
+  using: docker # we are saying this action will run on docker
+  image: 'Dockerfile' # we will use our own Dockerfile to build an image and run it.
